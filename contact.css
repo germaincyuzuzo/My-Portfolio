@@ -1,0 +1,51 @@
+body{
+    font-family: calibri;
+    background-color: lightgray;
+    color: green;
+    background-image: url('new1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+form{
+    color: white;
+}
+table{
+    padding: 20px;
+    background-color: black;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+.coco{
+    border: none;
+    background-color: black;
+    outline: none;
+    color: white;
+    font-family: calibri;
+}
+.last{
+    background-color: black;
+    border: none;
+    color: lightgreen;
+    padding: 10px;
+}
+.last:hover{
+    font-size: 15px;
+}
+.only{
+    background-color: lightcyan;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: green;
+    padding: 10px;
+    font-size: 15px;
+}
+a:hover{
+    font-size: 20px;
+}
+td{
+    color: lightgreen;
+}

@@ -1,0 +1,55 @@
+#container{
+    background-color: #1f3153;
+    width: 350px;
+    height: 400px;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+body{
+    background-color: #141f33;
+    color: white;
+    font-family: sans-serif;
+}
+#input{
+    padding: 5px;
+}
+input{
+    background-color: #1f3153;
+    border: none;
+    outline: none;
+    color: white;
+}
+hr{
+    width: 180px
+}
+#login{
+    background-color: yellowgreen;
+    width: 100px;
+    height: 25px;
+    border-radius: 6px;
+    color: white
+}
+#login:hover{
+    color: blue;
+
+}	
+a{
+    color: lightgreen;
+    text-decoration: none;
+}
+a:hover{
+    font-size: 20px
+}
+h1{
+    color: lightgreen;
+}
+#custom{
+    padding: 10px;
+}
+p{
+    color: aqua;
+    font-size: 20px;
+}
+::placeholder{
+    color: rgb(19, 18, 18);
+}
