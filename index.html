@@ -2,144 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="./assets/index.css">
-    <link rel="stylesheet" href="./login.html">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
 
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            gap: 50px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            
+        }
+
+        .hero {
+            /* text-align: center; */
+            padding: 2rem;
+            color: grey;
+            /* background-color: #f4f4f4; */
+            border-radius: 15px;
+            display: flex;
+        }
+        .hero h2 {
+            border-bottom: 1px solid white;
+            width: 30%;
+            padding-bottom: 10px;
+        }
+        .profile img{
+            max-width: 80%;
+            padding: 10px;
+            border-radius: 50%;
+            
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            background-color: lightgray;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .contact {
+            color: grey;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 0.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-   
-    <!-- <div class="hero"> -->
-        <p>
-            <nav class="sticky">
-                <div class="home">
-                    <a href="#">GERMAIN CYUZUZO</a>
-                </div>
-                <ul class="nav-items">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul> 
-                <a href="login.html"><button><b>LOG OUT</b></button></a>
-            </nav>
-        </p>
-        <section id="home" class="detel sections">
-            <h1 class="intro">HOME</h1>
-            <div class="intro-text"><h1>Hi! Am <span>Germain Cyuzuzo</span></h1>
-                <p>Am a Website Developer, this is my legal Portfolio Website <br> to show every single
-                    detail about me <b>.</b> <br>
-                    <button class="hire"><a href="#"><b>HIRE ME</b></a></button>
-                </p></div>
-            <div class="images">
-                <img src="IMG_1558.jpg" alt="A photo of Germain Cyuzuzo">
-            </div>
+    <header>
+        <h1>I'm Germain Cyuzuzo.</h1>
+        <p>Blockchain Engineer | Python Engineer | Software Engineer</p>
+    </header>
 
-        </section>
-         
-    <!-- </div> -->
-        <section id="about" class="sections">
-            <h1 class="intro">About Me...</h1>
-            <div class="intro-text">
-                <p>
-                    As mentioned from above, am a personal web designer who is ready and committed to join or to take part in designing websites and getting recruited. <br>
-                I've recently worked on quite some websites and some of them are being held and run by different big componies such as Startimes, Mango 4G
-                and many more.... <br> Speaking of which, i have different degrees granted to me as a symbol of attending coding classes. <br>
-                More about me  
-                </p> 
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="hero">
+            <div class="content">
+                <h2>About Me</h2>
+            <p>
+                Versatile professional skilled in developing robust software solutions across various domains. 
+                With possession of expertise in Python programming, I build web applications, perform data analysis, and implement machine learning algorithms. Additionally, I intermediate in blockchain technology, 
+                capable of designing and developing decentralized applications (dApps), smart contracts, and secure blockchain protocols using platforms like Ethereum and Hyperledger.
+                As a Software Engineer, I also apply engineering principles to create, test, and maintain software systems, ensuring efficiency, scalability, and security in my solutions. This combination of skills allows me to innovate at the intersection of traditional software development and emerging blockchain technologies.
+              </p>
             </div>
-            <center><a href="" class="cv" >DOWNLOAD CV</a></center>
-        </section>
-        <section  id="skills" class="sections skills">
-            <h1 class="intro">Skills</h1>
-            <div class="intro-text">
-                <p>
-                    In common everyone has additional skills aside of his/her occupation. <br> This includes hobbies, languages and many more... <br>
-                I have listed a few of my skills regarding to my usual life.
-                </p>
-            </div>
-            <div class="certificates">
-                <h2>Certificates</h2>
-                <ul>
-                    <li>Solo Learn (Online Courses) <br> <br>
-                        <a href="certificate1.pdf" class="links">Download here</a>
-                    </li> <br>
-                    <li>High School Coding Lessons (Apaer) <br><br>
-                    <a href="certificate2" class="links">Download here</a>
-                    </li> <br>
-                    <li>W3schools (Online Courses) <br><br>
-                    <a href="certificate3" class="links">Download here</a>
-                    </li>
-                </ul>           
-            </div>
-           <div class="certificates">
-            <h2>Communication skills (Languages)</h2> 
-            <ul>
-                <li>English (Perfect)</li>
-                <li>French (Good)</li>
-                <li>Kiswahili (Well)</li>
-                <li>Kinyarwanda (Perfect)</li>
-            </ul>
-           </div>
-            <div class="certificates">
-                <h2>Hobbies</h2>
-            <ul>
-                <li>Basketball</li>
-                <li>Video Gaming</li>
-                <li>Music</li>
-            </ul>
+            <div class="profile">
+                <img src="./profile.jpeg" alt="">
             </div>
         </section>
-        <section id="contact" class="sections">
-                <h1 class="intro">Contact Me</h1>
-                <center>
-        <form action="submit.html" method="post">
-            <table>
-                <tr>
-                    <td>
-                        Names
-                    </td>
-                    <td>
-                        <input type="text" value="" name="" placeholder="Enter Username" class="coco"><hr>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        E-mail
-                    </td>
-                    <td>
-                        <input type="text" value="" name="" placeholder="Enter E-mail" class="coco"><hr>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Subject
-                    </td>
-                    <td>
-                        <input type="text" value="" name="" placeholder="Enter Subject" class="coco"><hr>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Body
-                    </td>
-                    <td>
-                        <textarea placeholder="Description" rows="10" class="only"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="submit" value="SEND" name="" class="last"> <input type="Reset" name="" class="last"></td>
-                </tr>
-            </table>
-        </form>
-            </center>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Description of the project.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Description of the project.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>Description of the project.</p>
+                </div>
+            </div>
         </section>
-            <footer>
-                Copyrights(R). MyPortfolio.com (2022)
-            </footer>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to work together, feel free to reach out!</p>
+            <p>Email: example@example.com</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
 </body>
 </html>
