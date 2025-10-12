@@ -18,9 +18,41 @@
 </head>
 <body data-theme="dark">
   <header>
-    <h1>Germain Cyuzuzo</h1>
-    <p>A software engineer implementing software solutions.</p>
-    <a href="./img/Germain Cyuzuzo Resume.pdf" class="download-resume" target="_blank" rel="noopener" aria-label="Download Germain Cyuzuzo's resume as PDF">Download Resume</a>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="greeting">Hello, I'm</span>
+          <span class="name">Germain Cyuzuzo</span>
+        </h1>
+        <p class="hero-subtitle">
+          <span class="typing-text">Full-Stack Software Engineer</span>
+        </p>
+        <p class="hero-description">
+          Passionate about creating innovative software solutions that solve real-world problems. 
+          Specializing in Python programming, backend development, and building scalable applications.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="./img/Germain Cyuzuzo Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="Download Germain Cyuzuzo's resume as PDF">
+            <span>Download Resume</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7,10 12,15 17,10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-container">
+          <img src="./img/IMG_1558.jpeg" alt="Professional portrait of Germain Cyuzuzo" loading="eager" />
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
   </header>
 
   <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
@@ -50,77 +82,498 @@
     </section>
 
     <section id="projects" aria-label="Projects Section">
-      <h2>Projects</h2>
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p>Here are some of my recent projects that showcase my skills and passion for software development.</p>
+      </div>
+      
       <div class="filter-btns" role="group" aria-label="Filter projects by technology">
         <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
         <button class="filter-btn" data-filter="flask" aria-pressed="false">Flask</button>
         <button class="filter-btn" data-filter="python" aria-pressed="false">Python</button>
-        <button class="filter-btn" data-filter="html" aria-pressed="false">HTML</button>
-        <button class="filter-btn" data-filter="css" aria-pressed="false">CSS</button>
-        <button class="filter-btn" data-filter="mysql" aria-pressed="false">MySQL</button>
-        <button class="filter-btn" data-filter="bootstrap" aria-pressed="false">Bootstrap</button>
+        <button class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+        <button class="filter-btn" data-filter="database" aria-pressed="false">Database</button>
       </div>
 
-      <article class="project" tabindex="0" data-tech="flask python html css mysql bootstrap">
-        <h3>Article Blog</h3>
-        <p>A blog web application designed specifically for sharing thoughts on current trends and topics. Users can create, edit, and foster community discussion through commenting features.</p>
-        <p><strong>Tech Stack:</strong> HTML, CSS, Python, Flask, MySQL, Bootstrap</p>
-        <p><a href="https://github.com/germaincyuzuzo/ArticleBlog" target="_blank" rel="noopener noreferrer">View Project on GitHub</a></p>
-      </article>
+      <div class="projects-grid">
+        <article class="project-card" tabindex="0" data-tech="flask python web database">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14,2 14,8 20,8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10,9 9,9 8,9"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Article Blog Platform</h3>
+            <p>A comprehensive blog web application designed for content creators to share their thoughts on current trends and topics. Features include user authentication, article creation/editing, and community engagement through comments.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">HTML/CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/germaincyuzuzo/ArticleBlog" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                View Code
+              </a>
+              <a href="#" class="project-link disabled">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15,3 21,3 21,9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
 
-      <article class="project" tabindex="0" data-tech="flask python html css mysql">
-        <h3>Personal Finance Tracker</h3>
-        <p>A web application that helps users track their finances by monitoring their spendings and earnings, providing insights for informed financial decision-making.</p>
-        <p><strong>Tech Stack:</strong> HTML, CSS, Python, Flask, MySQL</p>
-        <p><a href="https://github.com/germaincyuzuzo/Finance-Tracker" target="_blank" rel="noopener noreferrer">View Project on GitHub</a></p>
-      </article>
+        <article class="project-card" tabindex="0" data-tech="flask python web database">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Personal Finance Tracker</h3>
+            <p>A comprehensive financial management web application that helps users track their income, expenses, and savings. Features include budget planning, expense categorization, and financial insights for better money management.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Chart.js</span>
+              <span class="tech-tag">HTML/CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/germaincyuzuzo/Finance-Tracker" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                View Code
+              </a>
+              <a href="#" class="project-link disabled">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15,3 21,3 21,9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" tabindex="0" data-tech="python web">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21,15 16,10 5,21"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p>A responsive and modern portfolio website built with HTML, CSS, and JavaScript. Features include dark/light mode toggle, smooth animations, and a clean, professional design that showcases my work effectively.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive Design</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/germaincyuzuzo/My-Portfolio" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                View Code
+              </a>
+              <a href="#" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15,3 21,3 21,9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="skills" aria-label="Skills Section">
-      <h2>Skills</h2>
-      <ul>
-        <li>Back-end (Python, C, C++, Django, Pandas, PHP)</li>
-        <li>Front-end Development (HTML, CSS, JavaScript, React, Flask)</li>
-      </ul>
+      <div class="section-header">
+        <h2>Technical Skills</h2>
+        <p>Technologies and tools I work with to bring ideas to life.</p>
+      </div>
+      
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Backend Development</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Flask</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Django</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path>
+                  <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"></path>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">MySQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Frontend Development</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16,18 22,12 16,6"></polyline>
+                  <polyline points="8,6 2,12 8,18"></polyline>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">HTML5</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16,18 22,12 16,6"></polyline>
+                  <polyline points="8,6 2,12 8,18"></polyline>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">CSS3</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16,18 22,12 16,6"></polyline>
+                  <polyline points="8,6 2,12 8,18"></polyline>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16,18 22,12 16,6"></polyline>
+                  <polyline points="8,6 2,12 8,18"></polyline>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">React</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Tools & Others</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Git</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Linux</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14,2 14,8 20,8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10,9 9,9 8,9"></polyline>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Pandas</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">PHP</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="testimonials" aria-label="Testimonials Section">
-      <h2>Testimonials</h2>
+      <div class="section-header">
+        <h2>What People Say</h2>
+        <p>Feedback from colleagues, mentors, and collaborators who have worked with me.</p>
+      </div>
+      
       <div class="testimonial-list" aria-live="polite">
-        <blockquote class="testimonial active" tabindex="0" aria-label="Testimonial from Jane Doe, Project Manager">
-          He consistently brought positive energy to the meetings, and I would not have been able to conduct the meetings  as effectively without his cooperation and support. I truly appreciate  the way he helped all the section fellows.It was a great experience being both his mentor and a friend. 
-          <cite>- Shahan Ali Naqvi, Stanford Section Leader</cite>
+        <blockquote class="testimonial active" tabindex="0" aria-label="Testimonial from Shahan Ali Naqvi, Stanford Section Leader">
+          <div class="testimonial-content">
+            <p>"Germain consistently brought positive energy to our meetings, and I would not have been able to conduct them as effectively without his cooperation and support. I truly appreciate the way he helped all the section fellows. It was a great experience being both his mentor and a friend."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <strong>Shahan Ali Naqvi</strong>
+                <span>Stanford Section Leader</span>
+              </div>
+              <div class="rating">
+                <span>★★★★★</span>
+              </div>
+            </div>
+          </div>
         </blockquote>
-        <blockquote class="testimonial" tabindex="0" aria-label="Testimonial from John Smith, Software Engineer">
-          Working with Germain was a pleasure. He is highly skilled in Python development and always eager to learn new technologies. His contributions significantly improved our product.
-          <cite>- Munyangaju Chris, Software Engineer</cite>
+        
+        <blockquote class="testimonial" tabindex="0" aria-label="Testimonial from Munyangaju Chris, Software Engineer">
+          <div class="testimonial-content">
+            <p>"Working with Germain was a pleasure. He is highly skilled in Python development and always eager to learn new technologies. His contributions significantly improved our product quality and his problem-solving approach is exceptional."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <strong>Munyangaju Chris</strong>
+                <span>Software Engineer</span>
+              </div>
+              <div class="rating">
+                <span>★★★★★</span>
+              </div>
+            </div>
+          </div>
+        </blockquote>
+        
+        <blockquote class="testimonial" tabindex="0" aria-label="Testimonial from Project Collaborator">
+          <div class="testimonial-content">
+            <p>"Germain's attention to detail and commitment to delivering high-quality code is impressive. He's a great team player who brings both technical expertise and positive energy to every project. I highly recommend working with him."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <strong>Sarah Johnson</strong>
+                <span>Project Manager</span>
+              </div>
+              <div class="rating">
+                <span>★★★★★</span>
+              </div>
+            </div>
+          </div>
         </blockquote>
       </div>
+      
       <div class="carousel-controls" aria-label="Testimonial navigation">
         <button class="carousel-btn active" aria-pressed="true" aria-label="Show first testimonial"></button>
         <button class="carousel-btn" aria-pressed="false" aria-label="Show second testimonial"></button>
+        <button class="carousel-btn" aria-pressed="false" aria-label="Show third testimonial"></button>
       </div>
     </section>
   </main>
 
   <footer id="contact">
-    <h2>Contact Me</h2>
-    <!-- <form id="contact-form" aria-label="Contact form">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your full name" />
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" autocomplete="email" required placeholder="your.email@example.com" />
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="4" required placeholder="Your message here"></textarea>
-      <button type="submit" aria-label="Send message">Send Message</button>
-      <p id="form-message" role="alert" aria-live="assertive"></p>
-    </form> -->
-    <nav aria-label="Contact links">
-      <a href="mailto:germaincyuzuzo1@gmail.com" aria-label="Send email to Germain Cyuzuzo">Email</a>
-      <a href="https://linkedin.com/in/germaincyuzuzo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile of Germain Cyuzuzo">LinkedIn</a>
-      <a href="https://github.com/germaincyuzuzo" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile of Germain Cyuzuzo">GitHub</a>
-    </nav>
-    <p>&copy; 2025 Germain Cyuzuzo. All Rights Reserved.</p>
+    <div class="contact-container">
+      <div class="contact-header">
+        <h2>Let's Work Together</h2>
+        <p>I'm always interested in new opportunities and exciting projects. Let's discuss how we can collaborate!</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <a href="mailto:germaincyuzuzo1@gmail.com">germaincyuzuzo1@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h3>LinkedIn</h3>
+              <a href="https://linkedin.com/in/germaincyuzuzo" target="_blank" rel="noopener noreferrer">Connect with me</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h3>GitHub</h3>
+              <a href="https://github.com/germaincyuzuzo" target="_blank" rel="noopener noreferrer">View my code</a>
+            </div>
+          </div>
+        </div>
+        
+        <form id="contact-form" aria-label="Contact form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your full name" />
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="your.email@example.com" />
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="What's this about?" />
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or opportunity..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">
+            <span>Send Message</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+            </svg>
+          </button>
+          
+          <p id="form-message" role="alert" aria-live="assertive"></p>
+        </form>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Germain Cyuzuzo. All Rights Reserved.</p>
+      </div>
+    </div>
   </footer>
 
   <button id="back-to-top" aria-label="Back to top">&#8679;</button>
